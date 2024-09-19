@@ -46,7 +46,7 @@ def draw_heat_map():
     mask = np.triu(np.ones_like(corr, dtype=bool))
 
     # 14
-    fig, ax = plt.subplots(figsize=(16, 9))
+    fig = plt.figure(figsize=(16, 9))
 
     # 15
     sns.heatmap(corr, mask=mask, square=True, linewidths=0.5, annot=True, fmt="0.1f")
